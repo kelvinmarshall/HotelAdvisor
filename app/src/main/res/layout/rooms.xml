@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="8dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/room_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBlack"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:id="@+id/room_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="KES 17500 "
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Room type"
+                android:id="@+id/room_type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:text="1 person"
+                android:id="@+id/capacity"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Features "
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/breakfast"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast included"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/dinner"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner included  "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/lunch"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch included  "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/book"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book now, pay later! "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/cancel"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free cancellation up to 23 hours "
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/hot"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hot Shower"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/bath"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bath tub"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv"
+            android:drawableLeft="@drawable/ic_check"
+            android:drawablePadding="15dp"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digital TV"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</android.support.v7.widget.CardView>

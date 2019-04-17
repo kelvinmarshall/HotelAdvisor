@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="@color/white"
+   android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:background="#d2e2c0"
+        android:layout_margin="8dp"
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:textSize="24sp"
+            android:layout_toStartOf="@+id/delete_icon"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="Delete"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/View_Foreground"
+        android:background="#fafcfa"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+                <ImageView
+                    android:id="@+id/hotelfavourite"
+                    android:layout_weight="1"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+                <TextView
+                    android:text="Name of the hotel"
+                    android:id="@+id/menu_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/hotelfavourite"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    android:text="Location"
+                    android:id="@+id/location_name"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/hotelfavourite"
+                    app:layout_constraintTop_toBottomOf="@+id/menu_name"/>
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KES 17500 "
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/hotelfavourite"
+                    app:layout_constraintTop_toBottomOf="@+id/location_name"/>
+                <Button
+                    android:id="@+id/btnbooknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:layout_gravity="bottom|end"
+                    android:text="Book Now"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/price"/>
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

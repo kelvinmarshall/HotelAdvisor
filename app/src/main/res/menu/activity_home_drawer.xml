@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_find"
+                android:icon="@drawable/ic_search_black_24dp"
+                android:title="Find Hotel" />
+            <item
+                android:id="@+id/nav_favourite"
+                android:icon="@drawable/ic_favorite_black_24dp"
+                android:title="Favourites" />
+            <item
+
+                android:id="@+id/nav_nearby"
+                android:icon="@drawable/ic_map_black_24dp"
+
+                android:title="Nearby Hotels" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+
+                android:title="Sign Out" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_outline_black_24dp"
+                android:title="Help Center" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_error_outline_black_24dp"
+                android:title="About Us" />
+        </group>
+
+</menu>
+
+

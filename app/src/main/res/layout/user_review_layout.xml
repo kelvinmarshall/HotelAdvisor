@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/reviewlayout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            style="@style/Divider"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_gravity="top"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/reviewerimage"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@android:color/white"
+                    app:civ_border_color="@android:color/black"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:paddingEnd="4dp"
+                    android:paddingStart="4dp"
+                    android:id="@+id/txtstayed"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:padding="4dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/txtasa"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginStart="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/reviewername"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:text="Username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/postdate"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black"
+                            android:text="3 Days ago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/review_Show"
+                    android:gravity="top"
+                    android:layout_marginTop="15dp"
+                    android:text="This is a review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:drawableStart="@drawable/ic_thumb_up_black_24dp"
+                        android:textSize="14sp"
+                        android:id="@+id/like"
+                        android:drawablePadding="10dp"
+                        android:text="100"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/dislike"
+                        android:layout_marginStart="15dp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/ic_thumb_down_black_24dp"
+                        android:textSize="14sp"
+                        android:text="100"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_gravity="bottom"
+            style="@style/Divider"/>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

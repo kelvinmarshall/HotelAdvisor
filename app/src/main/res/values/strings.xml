@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Hotel Advisor</string>
+    <string name="hoteladvisor">HotelAdvisor</string>
+    <string name="all_your_favourites_hotels_and_restaurant_at_go">All your favourites hotels and restaurant at go.</string>
+    <string name="next">Continue</string>
+    <string name="phone_number">Phone number</string>
+    <string name="_0790384696">0790384696</string>
+    <string name="password">Password</string>
+    <string name="create_a_new_hoteladvisor_account">Create a new HotelAdvisor account</string>
+    <string name="sign_in">SignIn</string>
+    <string name="already_have_an_account_signin">Already have an account,signIn.</string>
+    <string name="sign_up">SignUp</string>
+    <string name="name">Name</string>
+    <string name="book_better_tour_better">Book better.Tour better.Enjoy</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="forgot_pwd"><u>Forgot Password?</u></string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter results</string>
+    <string name="search_hint">Search for hotels…</string>
+
+    <string name="recipient">klvnmarshall@gmail.com</string>
+    <string name="title">Feedback/Help</string>
+</resources>

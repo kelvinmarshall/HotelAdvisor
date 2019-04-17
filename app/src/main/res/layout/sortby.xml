@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:onClick="selectItem"
+                android:layout_gravity="center"
+                android:id="@+id/sort_name"
+                android:textSize="24sp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Hotel Name"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:onClick="selectItem"
+                android:layout_gravity="center"
+                android:id="@+id/sort_location"
+                android:textSize="24sp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Location"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:onClick="selectItem"
+                android:layout_gravity="center"
+                android:id="@+id/sort_price"
+                android:textSize="24sp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Average Price"/>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/spinner3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
